@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/flContentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp10"
+            android:layout_margin="@dimen/size_dp16"
+            android:padding="@dimen/size_dp10"
+            android:background="@color/graph_end_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_dp8"
+                android:text="@string/view_my_timetable"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/font_size_16sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_dp20"
+                android:paddingRight="@dimen/size_dp10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_date"
+                    android:textSize="@dimen/size_dp16"
+                    android:textColor="@color/colorDarkBlack">
+                </TextView>
+
+                <Space
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </Space>
+
+                <Space
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </Space>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_dp20"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="@dimen/size_dp20"
+                android:background="@drawable/gray_rectangle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_dp8"
+                android:paddingRight="@dimen/size_dp8">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_dp2"
+                    android:layout_marginRight="@dimen/size_dp2"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_dp6">
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_red"
+                        android:textSize="@dimen/font_size_16sp"
+                        android:text="4 july 2017">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size_dp1"
+                    android:layout_height="match_parent"
+                    android:background="@color/darkGray">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_dp2"
+                    android:layout_marginRight="@dimen/size_dp2"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp30"
+                        android:layout_height="@dimen/size_dp30"
+                        android:src="@drawable/ic_menu">
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/darkGray">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_dp10">
+
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/blue_rectangle"
+                        android:elevation="@dimen/size_dp10"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/size_dp2"
+                            android:text="@string/search_txt"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_18sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_dp16"
+                android:layout_marginLeft="@dimen/size_dp20"
+                android:layout_marginRight="@dimen/size_dp20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:textSize="@dimen/font_size_16sp"
+                        android:text="@string/lect_time"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_dp10"
+                            android:textSize="@dimen/font_size_16sp"
+                            android:text="@string/subject"
+                            android:textColor="@color/white"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeTableRecyclerView">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

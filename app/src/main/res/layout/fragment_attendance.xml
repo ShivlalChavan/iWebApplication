@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/flContentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp10"
+            android:layout_margin="@dimen/size_dp16"
+            android:padding="@dimen/size_dp10"
+            android:background="@color/graph_end_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_dp8"
+                android:text="@string/view_my_attn"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/font_size_16sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_dp10"
+                android:paddingRight="@dimen/size_dp10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_year_txt"
+                    android:textSize="@dimen/size_dp14"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_month_txt"
+                    android:textSize="@dimen/size_dp14"
+                    android:textColor="@color/colorBlack">
+                </TextView>
+
+                <Space
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </Space>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_dp8"
+                android:paddingRight="@dimen/size_dp8"
+                android:paddingTop="@dimen/size_dp10"
+                android:paddingBottom="@dimen/size_dp10"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/size_dp2"
+                    android:layout_marginRight="@dimen/size_dp2"
+                    android:padding="@dimen/size_dp4">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_dp38"
+                        android:background="@drawable/gray_rectangle">
+
+                        <com.example.iwebapp.ThirdParty.Spinner.SearchableSpinner
+                            android:id="@+id/spnYears"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_dp2"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/size_dp2"
+                    android:layout_marginRight="@dimen/size_dp2"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_dp4">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_dp38"
+                        android:background="@drawable/gray_rectangle">
+
+
+                        <com.example.iwebapp.ThirdParty.Spinner.SearchableSpinner
+                            android:id="@+id/spnMonths"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_dp2"
+                            android:clickable="true"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"/>
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/size_dp4"
+                    android:layout_marginRight="@dimen/size_dp4"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/rectangle_border"
+                    android:padding="@dimen/size_dp4"
+                    android:elevation="@dimen/size_dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp30"
+                        android:layout_height="@dimen/size_dp30"
+                        android:src="@drawable/ic_search"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_margin="@dimen/size_dp2">
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_txt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_18sp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/size_dp2">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_dp10"
+                android:layout_marginLeft="@dimen/size_dp20"
+                android:layout_marginRight="@dimen/size_dp20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:textSize="@dimen/font_size_20sp"
+                        android:text="@string/absent_date"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absentRecyclerView">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="20"
+            android:padding="@dimen/size_dp20"
+            android:background="@color/darkGray"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_dp10"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/size_dp24"
+                    android:layout_height="@dimen/size_dp24"
+                    android:src="@drawable/facebook"
+                    android:layout_margin="@dimen/size_dp10"
+                    android:scaleType="fitXY">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/size_dp24"
+                    android:layout_height="@dimen/size_dp24"
+                    android:src="@drawable/twitter"
+                    android:layout_margin="@dimen/size_dp10"
+                    android:scaleType="fitXY">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/size_dp24"
+                    android:layout_height="@dimen/size_dp24"
+                    android:src="@drawable/linkedin"
+                    android:layout_margin="@dimen/size_dp10"
+                    android:scaleType="fitXY">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="@dimen/size_dp24"
+                    android:layout_height="@dimen/size_dp24"
+                    android:src="@drawable/youtube"
+                    android:layout_margin="@dimen/size_dp10"
+                    android:scaleType="fitXY">
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include
+            layout="@layout/layout_toolbar_global"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flContentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_dp10"
+                android:layout_margin="@dimen/size_dp16"
+                android:padding="@dimen/size_dp10"
+                android:background="@color/graph_end_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_dp8"
+                    android:text="@string/home"
+                    android:textColor="@color/blue_color"
+                    android:textSize="@dimen/font_size_16sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="70"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+                <!--group1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_dp8"
+                    android:gravity="center">
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llAttendance"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <com.example.iwebapp.Common.RoundedImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:padding="@dimen/size_dp4"
+                            android:src="@drawable/attendance"
+                            android:scaleType="fitXY">
+
+                        </com.example.iwebapp.Common.RoundedImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/attendance"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llTimeTable"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/timetable"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/timetable"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llNotification"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/notification"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notification"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--group2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_dp8"
+                    android:gravity="center">
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llResult"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/result"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/result"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llPlacements"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/placements"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placements"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llCampus"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/campus"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/campus"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--group3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_dp8"
+                    android:gravity="center">
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llCourses"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/courses"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/courses"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llLibrary"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/library"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/library"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <!--item-->
+                    <LinearLayout
+                        android:id="@+id/llDashboard"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/size_dp8"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.example.iwebapp.Common.CircleImageView
+                            android:layout_width="@dimen/size_dp56"
+                            android:layout_height="@dimen/size_dp56"
+                            android:src="@drawable/dashboard"
+                            android:padding="@dimen/size_dp4"
+                            android:scaleType="centerCrop">
+
+                        </com.example.iwebapp.Common.CircleImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dashboard"
+                            android:layout_marginTop="@dimen/size_dp6"
+                            android:textSize="@dimen/font_size_14sp"
+                            android:textColor="@color/blue_color">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="20"
+                android:padding="@dimen/size_dp20"
+                android:background="@color/darkGray"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_dp10"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp24"
+                        android:layout_height="@dimen/size_dp24"
+                        android:src="@drawable/facebook"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp24"
+                        android:layout_height="@dimen/size_dp24"
+                        android:src="@drawable/twitter"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp24"
+                        android:layout_height="@dimen/size_dp24"
+                        android:src="@drawable/linkedin"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="@dimen/size_dp24"
+                        android:layout_height="@dimen/size_dp24"
+                        android:src="@drawable/youtube"
+                        android:layout_margin="@dimen/size_dp10"
+                        android:scaleType="fitXY">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

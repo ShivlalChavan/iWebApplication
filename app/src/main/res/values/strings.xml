@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">iWeb App</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="timetable">TimeTable</string>
+    <string name="notification">Notification</string>
+    <string name="result">Result</string>
+    <string name="placements">Placements</string>
+    <string name="campus">Campus</string>
+    <string name="courses">Courses</string>
+    <string name="library">Library</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="view_my_attn">View My Attendance</string>
+    <string name="no_of_months_label">Select Months</string>
+    <string name="search_txt">Search</string>
+    <string name="absent_date">ABSENT DATE</string>
+    <string name="select_year_txt">Select Year</string>
+    <string name="select_month_txt">Select Month</string>
+    <string name="view_my_timetable">View My TimeTable</string>
+    <string name="select_date">Select Date</string>
+    <string name="lect_time">LEC-TIME</string>
+    <string name="subject">SUBJECT</string>
+    <string name="iweb_ap">iWeb App</string>
+</resources>
